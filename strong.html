@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+    <link rel="stylesheet" href="https://miyatashuuya.github.io/Portfolio/style.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_vue.css">
+    <title>筋肉管理</title>
+</head>
+<body>
+    <header>
+        <h1>Training</h1>
+        <div class="head_top_btn"><a href="index.html">TOP</a></div>
+        <div class="hunbarger">
+            <div class="pan"></div>
+            <div class="meet"></div>
+            <div class="pan"></div>
+        </div>
+    </header>
+    <main>
+    <ul class="top_menu">
+        <li><a href="#" class="current">音楽</a></li>
+        <li><a href="#">タイマー</a></li>
+        <li><a href="#">体重</a></li>
+        <li><a href="BMI.html">BMI</a></li>
+        <span></span>
+    </ul>
+
+    <h2 class="strong_h2">What to do?</h2>
+
+    <div id="app" class="container">
+        <h1>
+          <button @click="purge">全削除</button>
+          ToDoList
+          <span class="info">{{ remaining.length }}/{{ todos.length }}</span>
+        </h1>
+        <ul>
+          <li v-for="(todo, index) in todos">
+            <input type="checkbox" v-model="todo.isDone">
+            <span :class="{done: todo.isDone}">{{ todo.title }}</span>
+            <span @click="deleteItem(index)" class="command">削除</span>
+          </li>
+          <!-- <li v-show="!todos.length"></li> -->
+        </ul>
+        <form @submit.prevent="addItem">
+          <input type="text" v-model="newItem">
+          <input type="submit" value="追加">
+        </form>
+      </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+      <script src="js/main.js"></script>
+
+
+
+
+
+    <ul class="ul_p">
+        <div class="li_1">
+            <li class="li_c strong_li_c"><a href="strong.html" class="strong_weight">筋トレ管理</a></li>
+        
+        </div>
+        <div class="li_1">
+            <li class="li_c form_li_c"><a href="form.html" class="form_form">筋トレフォーム</a></li>
+            
+        </div>
+        <div class="li_1">
+            <li class="li_c biggner_li_c"><a href="biggner.html" class="biggner_biggner">初心者</a></li>
+            
+        </div>
+        <div class="li_1">
+            <li class="li_c cook_li_c"><a href="cook.html" class="cook_li">料理</a></li>
+            
+        </div>
+        <div class="li_1">
+            <li class="li_c woman_li_c"><a href="woman.html" class="woman_woman">女性</a></li>
+            
+        </div>
+        <div class="li_1">
+            <li class="li_c origin_li_c"><a href="origin.html" class="origin_origin">自作メニュー</a></li>
+            
+        </div>
+        <div class="li_1">
+            <li class="li_c stretch_li_c"><a href="stretch.html" class="stretch stretch_stretch">ストレッチ</a></li>
+            
+        </div>
+        <div class="li_1">
+            <li class="li_c own_wg_li_c"><a href="own_wg.html" class="own_wg own_wg_own_wg">自重・体感</a></li>
+            
+        </div>
+       
+</ul>
+</main>
+<p class="fi"></p>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="main.js"></script>
+<script src="vue.js"></script>
+<script src="jq.js"></script>
+</body>
+</html>

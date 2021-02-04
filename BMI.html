@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>BMI測定</title>
+</head>
+<body>
+    <header>
+        <h1>Training<span></span></h1>
+        <div class="head_top_btn"><a href="index.html">TOP</a></div>
+        <div class="hunbarger">
+            <div class="pan"></div>
+            <div class="meet"></div>
+            <div class="pan"></div>
+        </div>
+    </header>
+    <main>
+        <ul class="top_menu">
+            <li><a href="#" class="current">音楽</a></li>
+            <li><a href="#">タイマー</a></li>
+            <li><a href="#">体重</a></li>
+            <li><a href="BMI.html">BMI</a></li>
+            <span></span>
+        </ul>
+
+        <h1 class="BMI_h1">BMI測定</h1>
+        <div class="BMI_main_content">
+            <label for="height">身長 (cm)</label>
+            <input id="height" type="text" value="">
+            <label for="weight">体重 (kg)</label>
+            <input id="weight" type="text" value="">
+            <input id="button-submit" type="submit" value="計測開始">
+            <div class="BMI">
+                あなたのBMIは
+            </div>
+            <div id="bmi-output"></div>
+        </div>
+
+        <ul class="ul_p">
+            <div class="li_1">
+                <li class="li_c strong_li_c"><a href="strong.html" class="strong_weight">筋トレ管理</a></li>            
+            </div>
+            <div class="li_1">
+                <li class="li_c form_li_c"><a href="form.html" class="form_form">筋トレフォーム</a></li>                
+            </div>
+            <div class="li_1">
+                <li class="li_c biggner_li_c"><a href="biggner.html" class="biggner_biggner">初心者</a></li>         
+            </div>
+            <div class="li_1">
+                <li class="li_c cook_li_c"><a href="cook.html" class="cook_li">料理</a></li>                
+            </div>
+            <div class="li_1">
+                <li class="li_c woman_li_c"><a href="woman.html" class="woman_woman">女性</a></li>               
+            </div>
+            <div class="li_1">
+                <li class="li_c origin_li_c"><a href="origin.html" class="origin_origin">自作メニュー</a></li>               
+            </div>
+            <div class="li_1">
+                <li class="li_c stretch_li_c"><a href="stretch.html" class="stretch stretch_stretch">ストレッチ</a></li>               
+            </div>
+            <div class="li_1">
+                <li class="li_c own_wg_li_c"><a href="own_wg.html" class="own_wg own_wg_own_wg">自重・体感</a></li>
+            </div>
+    </ul>
+    </main>
+
+    <p class="fi"></p>
+
+
+    <script src="BMI.js"></script>
+    <script src="main.js"></script>
+    <script src="jq.js"></script>
+
+</body>
+</html>

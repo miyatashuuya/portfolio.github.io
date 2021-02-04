@@ -1,0 +1,163 @@
+body {
+    background-image: url(images/th__MG_9484_new.webp);
+    background-size: cover;
+}
+
+.container_00 > p {
+    width: 300px;
+    margin: 300px auto;
+    text-align: center;
+    position: relative;
+}
+
+.container_00 > p > a {
+    text-decoration: none;
+    color: #fff;
+    border: 0 solid;
+    padding: 20px 60px;
+    background: rgb(250, 129, 129);
+    border-radius: 50px ;
+    box-shadow: 0 4px 0 rgba(253, 73, 73, 0.788);
+    position: fixed;
+    top: 300px;
+    left: 20%;
+    right: 20%;
+}
+p > a:active {
+    position: fixed;
+    top: 303px;
+    box-shadow: 0 2px 0 #2880b9;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        background-image: url(images/th__MG_9484_new.webp);
+    }
+    
+    .container {
+        /* background: #aaa; */
+        padding: 30px;
+    }
+    span {
+        background: linear-gradient( #fff, red);
+        font-size: 17px;
+    }
+    header > p{
+       font-size: 14px;
+       color: #fff;
+    }
+    .container h2 {
+        color: red;
+        background: rgb(247, 191, 89);
+    }
+    
+    .menu_menu {
+        font-size: 20px;
+        margin: 20px 10px;
+        text-align: center;
+        color: red;
+    }
+    .menu_ran {
+        padding-left: 30px;
+        margin-bottom: 20px;
+        width: 90%;
+        height: 230px;
+        margin: auto ;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px rgb(255, 166, 0);
+        color: #fff;
+        background: rgb(247, 191, 89);
+    }
+    
+    .menu_food {
+        padding-left: 30px;
+        margin-bottom: 20px;
+        height: 400px;
+        width: 90%;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px orange;
+        color: #fff;
+        background: rgb(247, 191, 89);
+    
+    }
+}
+@media screen and (min-width: 800px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        height: 100vh;
+    }
+    
+    .container {
+        /* background: #aaa; */
+        padding: 30px;
+    }
+    span {
+        background: linear-gradient( #fff, red);
+        font-size: 17px;
+    }
+    header > p{
+       font-size: 14px;
+       color: #fff;
+    }
+    .container h2 {
+        color: red;
+        background: rgb(247, 191, 89);
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .flex {
+        display: flex;
+        /* justify-content: center; */
+    }
+    
+    
+    .menu_menu {
+        font-size: 20px;
+        margin: 20px 10px;
+        text-align: center;
+        color: red;
+    }
+    .menu_ran {
+        padding: 30px;
+        width: 40%;
+        height: 80%;
+        margin: 52px auto  ;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px rgb(255, 166, 0);
+        color: #fff;
+        background: rgb(247, 191, 89);
+    }
+    
+    .menu_food {
+        padding: 30px;
+        /* margin-bottom: 20px; */
+        height: 80%;
+        width: 40%;
+        margin: 50px auto 0;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px orange;
+        color: #fff;
+        background: rgb(247, 191, 89);
+    
+    }
+}
+
+
