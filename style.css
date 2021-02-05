@@ -2,8 +2,6 @@
 /* レスポンシブ　対応 */
 
 @media screen and (max-width: 800px) {
- 
-    
 * {
     padding: 0;
     margin: 0;
@@ -322,9 +320,6 @@ body > main {
 .strong_P span {
     font-size:19px;
 }
-.strong_P button {
-    
-}
 
 .strong_h2::before {
     content: "";
@@ -493,7 +488,6 @@ body > main {
     color: #fff;
     font-size: 18px;
     font-weight: 100;
-    background: linear-gradient(transparent, 50 ,50%);
 }
 
 /* cook.html */
@@ -555,8 +549,6 @@ header > .music {
     position: absolute;
     top: -50px;
     width: 100%;
-}
-.music_c {
 }
 
 .music > .music_c > iframe{
@@ -1107,7 +1099,6 @@ body > main {
     color: #fff;
     font-size: 18px;
     font-weight: 100;
-    background: linear-gradient(transparent, 50 ,50%);
 }
 
 /* cook.html */
