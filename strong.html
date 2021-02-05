@@ -30,9 +30,9 @@
 
     <h2 class="strong_h2">What to do?</h2>
 
-    <div id="app" class="container">
+    <div id="app" class="strong_P">
         <h1>
-          <button @click="purge">全削除</button>
+          <button @click="purge">Delete All</button>
           ToDoList
           <span class="info">{{ remaining.length }}/{{ todos.length }}</span>
         </h1>
@@ -40,7 +40,7 @@
           <li v-for="(todo, index) in todos">
             <input type="checkbox" v-model="todo.isDone">
             <span :class="{done: todo.isDone}">{{ todo.title }}</span>
-            <span @click="deleteItem(index)" class="command">削除</span>
+            <span @click="deleteItem(index)" class="command">🗑</span>
           </li>
           <!-- <li v-show="!todos.length"></li> -->
         </ul>
@@ -49,12 +49,6 @@
           <input type="submit" value="追加">
         </form>
       </div>
-    
-      <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-      <script src="js/main.js"></script>
-
-
-
 
 
     <ul class="ul_p">
